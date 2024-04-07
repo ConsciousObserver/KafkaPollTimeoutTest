@@ -10,7 +10,8 @@ spring:
     bootstrap-servers:
     - localhost:9092
     consumer:
-#      max-poll-records: 5
+      max-poll-records: 5
       fetch-max-wait: 10
-#      properties:
-#        max.poll.interval.ms: 10000
+      properties:
+#     Reducing the poll timeout to induce poll timeout exception
+        max.poll.interval.ms: 10000
